@@ -1,0 +1,156 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import CTA from '../components/CTA.astro';
+---
+
+<Layout
+  title="Commercial Floor Cleaning"
+  description="Professional commercial floor cleaning services in Dronfield, Sheffield, and surrounding areas. Cleaning for pubs, restaurants, care homes, schools, and nurseries. Call 07481 597929."
+>
+  <Hero
+    title="Commercial Floor Cleaning Services in Dronfield"
+    subtitle="Absolutely Floorless provides professional commercial floor cleaning services throughout Dronfield, Sheffield, and the surrounding areas. We focus on delivering flawless finishes and long-lasting protection, ensuring your floors consistently create the perfect impression."
+  />
+
+  <!-- Value Props -->
+  <section class="bg-white py-8 border-b">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-wrap justify-center gap-4">
+        <span class="bg-secondary/10 text-secondary px-4 py-2 rounded-full font-medium">Friendly Service</span>
+        <span class="bg-secondary/10 text-secondary px-4 py-2 rounded-full font-medium">Discounts Available</span>
+        <span class="bg-secondary/10 text-secondary px-4 py-2 rounded-full font-medium">High-Quality</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Commercial Services -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid gap-12">
+        <!-- Pubs & Restaurants -->
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+          <div>
+            <div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-6">
+              <span class="text-2xl">🍽️</span>
+            </div>
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+              Cleaning Services For Pubs And Restaurants
+            </h2>
+            <p class="text-gray-600 leading-relaxed mb-4">
+              We understand the importance of maintaining a clean and welcoming environment in pubs and restaurants. Our professional cleaning services ensure your establishment remains spotless, from dining areas to kitchens.
+            </p>
+            <p class="text-gray-600 leading-relaxed mb-4">
+              We focus on high-traffic areas, ensuring hygiene standards are met, and your guests enjoy a comfortable, clean setting. Whether routine or deep cleaning, we tailor our services to meet your business's needs.
+            </p>
+            <div class="bg-accent/10 p-4 rounded-lg">
+              <p class="text-accent font-medium">We offer free visits to assess your cleaning needs and provide an accurate quote.</p>
+            </div>
+          </div>
+          <div class="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-xl p-8 flex items-center justify-center min-h-[300px]">
+            <div class="text-center">
+              <span class="text-6xl mb-4 block">🍺</span>
+              <p class="text-gray-600 font-medium">Pubs & Restaurants</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Care Homes -->
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+          <div class="order-2 md:order-1 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-xl p-8 flex items-center justify-center min-h-[300px]">
+            <div class="text-center">
+              <span class="text-6xl mb-4 block">🏥</span>
+              <p class="text-gray-600 font-medium">Care Homes & Health Settings</p>
+            </div>
+          </div>
+          <div class="order-1 md:order-2">
+            <div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-6">
+              <span class="text-2xl">🏥</span>
+            </div>
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+              Expert Cleaning For Care Homes And Health Settings
+            </h2>
+            <p class="text-gray-600 leading-relaxed mb-4">
+              Cleanliness is crucial for the well-being of residents and patients in care homes and health settings. We provide specialised cleaning services that meet the high hygiene standards required in these environments.
+            </p>
+            <p class="text-gray-600 leading-relaxed">
+              Our team is trained to clean carefully, ensuring all areas are thoroughly disinfected, from communal spaces to private rooms. Our services help create a safe and comfortable environment for residents, staff, and visitors.
+            </p>
+          </div>
+        </div>
+
+        <!-- Schools & Nurseries -->
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+          <div>
+            <div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-6">
+              <span class="text-2xl">🎓</span>
+            </div>
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+              Comprehensive Cleaning For Schools And Nurseries
+            </h2>
+            <p class="text-gray-600 leading-relaxed mb-4">
+              We know how important it is to maintain a clean, safe environment for children in schools and nurseries. Our cleaning services are designed to ensure classrooms, play areas, and common spaces are free from germs and allergens.
+            </p>
+            <p class="text-gray-600 leading-relaxed mb-4">
+              We use safe, non-toxic cleaning products, and our team is trained to provide high-quality cleaning in educational settings, helping to create a healthy environment for learning and growth.
+            </p>
+            <div class="bg-accent/10 p-4 rounded-lg">
+              <p class="text-accent font-medium">
+                To ensure we meet your exact needs, we offer free visits to provide a tailored quote. You can also send pictures of your floors and any staining via WhatsApp to help us better understand your needs.
+              </p>
+            </div>
+          </div>
+          <div class="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-xl p-8 flex items-center justify-center min-h-[300px]">
+            <div class="text-center">
+              <span class="text-6xl mb-4 block">🏫</span>
+              <p class="text-gray-600 font-medium">Schools & Nurseries</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us for Commercial -->
+  <section class="py-16 md:py-24 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Businesses Choose Us</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-xl p-6 text-center shadow-sm">
+          <div class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">DBS Checked</h3>
+          <p class="text-gray-600">All our technicians are DBS-checked for your peace of mind.</p>
+        </div>
+        <div class="bg-white rounded-xl p-6 text-center shadow-sm">
+          <div class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">Flexible Scheduling</h3>
+          <p class="text-gray-600">We work around your business hours to minimise disruption.</p>
+        </div>
+        <div class="bg-white rounded-xl p-6 text-center shadow-sm">
+          <div class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">Tailored Solutions</h3>
+          <p class="text-gray-600">Custom cleaning plans designed for your specific business needs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <CTA
+    title="Get a Free Commercial Cleaning Quote"
+    subtitle="Contact us today to discuss your commercial cleaning requirements. We offer free site visits and competitive pricing."
+  />
+</Layout>

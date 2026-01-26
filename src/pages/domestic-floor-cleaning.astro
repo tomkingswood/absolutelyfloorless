@@ -1,0 +1,169 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import FAQ from '../components/FAQ.astro';
+import CTA from '../components/CTA.astro';
+
+const faqs = [
+  {
+    question: "How long will it take for my carpet to dry?",
+    answer: "It usually takes 3-4 hours for a carpet to dry completely in the summer time, but it could take up to 24 hours in the colder months! This is all dependent on the humidity, temperature, air circulation etc. Drying times can be accelerated by using dehumidifiers, turbo dryers, heating and other factors. Please make sure there is ample air circulation for your carpets to dry properly."
+  },
+  {
+    question: "Do you offer an end of tenancy carpet cleaning service?",
+    answer: "Yes! We can certainly provide an end of tenancy carpet cleaning services. A full house carpet clean deal can be offered at a reduced price and a certificate is given to the tenant to produce to the agent or property owner."
+  },
+  {
+    question: "How often should I have my carpets cleaned?",
+    answer: "For best results, you should have your carpets cleaned every 12 months. This will help prolong the life of your carpet and help with allergens. You should also clean stains and spills immediately."
+  },
+  {
+    question: "Can you guarantee stain removal?",
+    answer: "We can never guarantee stain removal! This is due to various factors such as how long the stain has been there, the nature of the stain, whether or not the customer has attempted DIY with shop-bought products. We can't guarantee complete removal, but with professional chemicals, equipment and training, we definitely give a 100% effort."
+  },
+  {
+    question: "Can traffic areas be cleaned so they are not visible?",
+    answer: "If the carpet is heavily soiled and worn it can be improved, but the chances are that the carpet fibres will have been damaged and therefore the traffic area will remain to some degree. Soiled areas with high traffic causes the carpets to grey or darken by abrasion. This is called carpet greying."
+  },
+  {
+    question: "How can carpet cleaning aid my health?",
+    answer: "Carpets can retain many pollutants such as dirt, dust, pet dander and dust mites, just to name a few. If a member of your household suffers from asthma, it is highly recommended to keep your carpets clean due to the above factors. Clean carpets will also aid air circulation."
+  },
+  {
+    question: "How long will it take to clean my carpet?",
+    answer: "The time it takes to clean your carpet depends on the carpet's density, how soiled it is and the size of the area being cleaned. A standard-sized room of 4x3m usually takes around 1 hour - 1.5 hours. This includes setup and clear away."
+  },
+  {
+    question: "Can I walk on my carpet while it's still damp?",
+    answer: "Yes, you can walk on damp carpet with bare feet or socks, but you should avoid wearing shoes or letting pets walk on it until it's completely dry. During its drying stage, the carpets will be slightly tacky, allowing dirt to re-soil the carpet quicker!"
+  },
+  {
+    question: "Will my carpet shrink during cleaning?",
+    answer: "Carpets will only shrink if too much heat or cleaning solution is used (over-wetting). Please be advised that shrinking is more prominent in Wilton carpets. The carpet cleaning technician will do a check prior to the clean to determine what fibre you have and treat accordingly!"
+  },
+  {
+    question: "Why do I have a stagnant smell after my carpets were cleaned?",
+    answer: "The main cause of this is due to putting furniture back before the carpet has fully dried out, thus trapping moisture. The other reason is poor air circulation. It is highly recommended to let the carpet fully dry out and to open windows or put your heating on after a clean."
+  },
+  {
+    question: "Are you a franchised company?",
+    answer: "No, I am a sole trader. The majority of my work comes from customer recommendations. I am able to bring you cheaper prices, due to the fact that I am a sole trader and don't have employees' wages to pay."
+  }
+];
+---
+
+<Layout
+  title="Domestic Floor Cleaning"
+  description="Expert upholstery and carpet cleaning services in Dronfield, Sheffield, and Newbold. Professional domestic cleaning with free deodoriser. Call 07481 597929."
+>
+  <Hero
+    title="Expert Upholstery Cleaning Services in Dronfield"
+    subtitle="Transform your carpets and upholstery with Absolutely Floorless, offering exceptional carpet and upholstery cleaning services across Dronfield, Sheffield, and Newbold. Get rid of stubborn stains and enjoy flawless, fresh carpets every time."
+  />
+
+  <!-- Value Props -->
+  <section class="bg-white py-8 border-b">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-wrap justify-center gap-4">
+        <span class="bg-secondary/10 text-secondary px-4 py-2 rounded-full font-medium">Friendly Service</span>
+        <span class="bg-secondary/10 text-secondary px-4 py-2 rounded-full font-medium">Discounts Available</span>
+        <span class="bg-secondary/10 text-secondary px-4 py-2 rounded-full font-medium">High-Quality</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Carpet Cleaning -->
+        <div class="bg-gray-50 rounded-xl p-8">
+          <div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-6">
+            <span class="text-2xl">🧹</span>
+          </div>
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">Professional Carpet Cleaning</h2>
+          <p class="text-gray-600 leading-relaxed mb-4">
+            Carpets and sofas take a lot of wear and tear, from dirt and spills to everyday use. Over time, they can begin to show signs of damage or dirt buildup.
+          </p>
+          <p class="text-gray-600 leading-relaxed mb-4">
+            Professional carpet and upholstery cleaning goes beyond just making your carpets and furniture look better – it removes allergens, bacteria, and odours that regular vacuuming can't tackle.
+          </p>
+          <p class="text-gray-600 leading-relaxed">
+            Whether you're dealing with stains or pet hair, or just want to freshen up your home, a professional cleaning service can make a noticeable difference.
+          </p>
+          <div class="mt-6 bg-accent/10 p-4 rounded-lg">
+            <p class="text-accent font-medium">Get a FREE deodoriser with every service - call now to book!</p>
+          </div>
+        </div>
+
+        <!-- Upholstery Cleaning -->
+        <div class="bg-gray-50 rounded-xl p-8">
+          <div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-6">
+            <span class="text-2xl">🛋️</span>
+          </div>
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">Upholstery Cleaning</h2>
+          <p class="text-gray-600 leading-relaxed mb-4">
+            Our professional upholstery cleaning service removes deep-seated dirt, stains, and bacteria, restoring your furniture to its original condition and helping to prolong its lifespan.
+          </p>
+          <p class="text-gray-600 leading-relaxed mb-4">
+            It includes a free carpet deodoriser, leaving your carpets not only looking great but smelling fresh too.
+          </p>
+          <p class="text-gray-600 leading-relaxed">
+            Whether it's a single room or an entire house, our tailored approach ensures your carpets and upholstery get the care they deserve.
+          </p>
+        </div>
+
+        <!-- Floor Cleaning -->
+        <div class="bg-gray-50 rounded-xl p-8">
+          <div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-6">
+            <span class="text-2xl">✨</span>
+          </div>
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">Floor Cleaning</h2>
+          <p class="text-gray-600 leading-relaxed mb-4">
+            Clean floors are essential for a fresh, welcoming home or workspace. Whether it's carpets, hardwood, or tiles, we provide expert floor cleaning services that eliminate dirt, grime, and stains.
+          </p>
+          <p class="text-gray-600 leading-relaxed">
+            Our deep cleaning methods not only enhance the appearance of your floors but also improve their durability and help maintain a healthier environment.
+          </p>
+        </div>
+
+        <!-- Our Process -->
+        <div class="bg-gray-50 rounded-xl p-8">
+          <div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-6">
+            <span class="text-2xl">📋</span>
+          </div>
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">How We Deliver Exceptional Results</h2>
+          <p class="text-gray-600 leading-relaxed mb-4">
+            Our process starts with a detailed assessment of your carpets to identify specific needs. We then use advanced equipment to deliver a deep clean that removes dirt, allergens, and odours.
+          </p>
+          <p class="text-gray-600 leading-relaxed mb-4">
+            For stubborn stains, our spot treatment is a game-changer, and our stain guard protection adds an extra layer of defence against future mishaps.
+          </p>
+          <p class="text-gray-600 leading-relaxed font-medium">
+            Ready to transform your carpets? Contact us today!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-16 md:py-24 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Got questions about our domestic cleaning services? Find answers to common queries below.
+        </p>
+      </div>
+      <div class="max-w-3xl mx-auto">
+        <FAQ items={faqs} />
+      </div>
+    </div>
+  </section>
+
+  <CTA
+    title="Transform Your Carpets Today"
+    subtitle="Don't wait to enjoy cleaner, fresher carpets. Call us now to book your professional cleaning service and experience the Absolutely Floorless difference."
+  />
+</Layout>

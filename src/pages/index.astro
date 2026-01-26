@@ -1,0 +1,199 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import ServiceCard from '../components/ServiceCard.astro';
+import FeatureList from '../components/FeatureList.astro';
+import Testimonial from '../components/Testimonial.astro';
+import CTA from '../components/CTA.astro';
+
+const services = [
+  {
+    title: 'Upholstery Cleaning',
+    description: 'Refresh and revitalise your furniture with our expert upholstery cleaning service for a spotless and fresh finish.',
+    icon: '🛋️',
+    href: '/domestic-floor-cleaning'
+  },
+  {
+    title: 'Domestic Cleaning',
+    description: 'Keep your home sparkling clean with our thorough and reliable domestic cleaning solutions.',
+    icon: '🏠',
+    href: '/domestic-floor-cleaning'
+  },
+  {
+    title: 'Commercial Cleaning',
+    description: 'Professional cleaning services tailored to businesses, ensuring a clean and welcoming environment.',
+    icon: '🏢',
+    href: '/commercial-floor-cleaning'
+  },
+  {
+    title: 'End-Of-Tenancy Cleaning',
+    description: 'Comprehensive end-of-tenancy cleaning, leaving properties pristine for the next occupants.',
+    icon: '🔑',
+    href: '/domestic-floor-cleaning'
+  },
+  {
+    title: 'Floor Cleaning',
+    description: 'From carpets to hard floors, our floor cleaning service guarantees a deep clean that restores and protects.',
+    icon: '✨',
+    href: '/domestic-floor-cleaning'
+  },
+  {
+    title: 'Sofa & Rug Cleaning',
+    description: 'Bring your sofas and rugs back to life with our specialised cleaning service.',
+    icon: '🧹',
+    href: '/domestic-floor-cleaning'
+  }
+];
+
+const features = [
+  { title: 'DBS-Checked Professionals', description: 'Trustworthy and reliable cleaning experts.' },
+  { title: 'PAT-Tested Equipment', description: 'Ensuring safety and efficiency on every job.' },
+  { title: 'Tailored Services', description: 'Customised cleaning plans for homes and offices.' },
+  { title: 'Eco-Friendly Options', description: 'Safe for your family and the environment.' },
+  { title: 'Local Expertise', description: 'Proudly serving Dronfield, Chesterfield, and nearby areas.' },
+  { title: 'Flexible Payments', description: 'Cash, BACS, cards, and contactless accepted.' }
+];
+
+const qualifications = [
+  'Carpet Cleaning Technician Certificate by Cleansmart',
+  'Upholstery Cleaning Technician Certificate by Cleansmart',
+  'Certificate of Achievement in Stone and Tile Cleaning by Tile Boutique'
+];
+---
+
+<Layout title="Professional Carpet Cleaning Services in Dronfield">
+  <Hero
+    title="Professional Carpet Cleaning Services in Dronfield"
+    subtitle="Absolutely Floorless delivers professional upholstery and carpet cleaning services in Dronfield, Chesterfield, and across North East Derbyshire. With a focus on precision and care, we ensure your spaces look spotless and feel fresh."
+  />
+
+  <!-- Special Offer Banner -->
+  <section class="bg-accent/10 py-4">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-accent font-semibold">
+        Spot stain treatment starting from just <span class="text-lg">£10</span> per stain for a cleaner, fresher home
+      </p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+          Domestic and Commercial Floor Cleaning Experts
+        </h2>
+        <p class="text-gray-600 text-lg leading-relaxed">
+          We specialise in cleaning carpets, hard floors, and upholstery in homes and businesses, ensuring a fresh and spotless finish every time. We pride ourselves on delivering a professional and friendly service that leaves your carpets looking pristine and smelling fresh, with each clean tailored to your specific needs.
+        </p>
+        <p class="text-gray-600 text-lg leading-relaxed mt-4">
+          Our fully trained SmartClean technician is DBS-checked and uses PAT-tested equipment to offer you peace of mind and ensure outstanding results.
+        </p>
+      </div>
+
+      <!-- Value Props -->
+      <div class="flex flex-wrap justify-center gap-4 mb-12">
+        <span class="bg-secondary/10 text-secondary px-4 py-2 rounded-full font-medium">Friendly Service</span>
+        <span class="bg-secondary/10 text-secondary px-4 py-2 rounded-full font-medium">Discounts Available</span>
+        <span class="bg-secondary/10 text-secondary px-4 py-2 rounded-full font-medium">High-Quality</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="py-16 md:py-24 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          From domestic cleaning to commercial solutions, we offer a comprehensive range of floor and upholstery cleaning services.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {services.map((service) => (
+          <ServiceCard {...service} />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission Section -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            Our Mission: Clean Spaces, Happy Faces
+          </h2>
+          <p class="text-gray-600 text-lg leading-relaxed mb-6">
+            We believe a clean space is more than just aesthetics—it's about creating a healthier, more welcoming environment. Founded with a commitment to quality and customer satisfaction, we've built a reputation for delivering exceptional results.
+          </p>
+          <p class="text-gray-600 text-lg leading-relaxed mb-6">
+            Whether it's a deep clean for your home or a quick refresh for your office, we're here to make your life easier.
+          </p>
+          <div class="bg-accent/10 p-4 rounded-lg">
+            <p class="text-accent font-medium">
+              Protect your carpets and upholstery from future stains with our Stain Guard protection, available from just <span class="font-bold">£15</span>.
+            </p>
+          </div>
+        </div>
+        <div class="bg-gray-100 rounded-xl p-8">
+          <h3 class="text-xl font-semibold text-gray-900 mb-6">What Makes Us Stand Out?</h3>
+          <FeatureList features={features} />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial Section -->
+  <section class="py-16 md:py-24 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What Our Customers Say</h2>
+      </div>
+      <div class="max-w-3xl mx-auto">
+        <Testimonial
+          quote="Tim from Absolutely Floorless has done an absolutely fantastic job of cleaning my carpets. He is friendly, professional and affordable. Tim is very knowledgeable about what he is doing and answered all of my questions. He managed my expectations when it came to removing long-standing stains, but it came up brilliantly, and looked like a new carpet. I will definitely be recommending him to all of my friends, family and neighbours."
+          author="Hayley V."
+          rating={5}
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- Qualifications Section -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Professional Qualifications</h2>
+        <p class="text-gray-600">Fully trained and certified to deliver the best results</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        {qualifications.map((qual) => (
+          <div class="bg-gray-50 p-6 rounded-xl text-center">
+            <div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+              </svg>
+            </div>
+            <p class="text-gray-700 font-medium">{qual}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Discount Banner -->
+  <section class="bg-primary py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-white text-lg">
+        Take advantage of our <span class="font-bold">special discounts</span> when booking multiple rooms, making your cleaning more affordable.
+      </p>
+    </div>
+  </section>
+
+  <CTA
+    title="Ready For Spotless Results?"
+    subtitle="Call us now to book your carpet cleaning service and experience the Absolutely Floorless difference!"
+  />
+</Layout>
