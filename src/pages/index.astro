@@ -4,6 +4,7 @@ import Hero from '../components/Hero.astro';
 import ServiceCard from '../components/ServiceCard.astro';
 import FeatureList from '../components/FeatureList.astro';
 import Testimonial from '../components/Testimonial.astro';
+import FAQ from '../components/FAQ.astro';
 import CTA from '../components/CTA.astro';
 
 const services = [
@@ -58,6 +59,13 @@ const qualifications = [
   'Carpet Cleaning Technician Certificate by Cleansmart',
   'Upholstery Cleaning Technician Certificate by Cleansmart',
   'Certificate of Achievement in Stone and Tile Cleaning by Tile Boutique'
+];
+
+const faqs = [
+  {
+    question: 'Are you a franchised company?',
+    answer: 'No, I am a sole trader. The majority of my work comes from customer recommendations. I am able to bring you cheaper prices, due to the fact that I am a sole trader and don\'t have employees\' wages to pay.'
+  }
 ];
 ---
 
@@ -161,8 +169,20 @@ const qualifications = [
     </div>
   </section>
 
-  <!-- Qualifications Section -->
+  <!-- FAQ Section -->
   <section class="py-16 md:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+      </div>
+      <div class="max-w-3xl mx-auto">
+        <FAQ items={faqs} />
+      </div>
+    </div>
+  </section>
+
+  <!-- Qualifications Section -->
+  <section class="py-16 md:py-24 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-12">
         <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Professional Qualifications</h2>
