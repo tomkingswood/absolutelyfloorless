@@ -3,18 +3,12 @@ interface Props {
   title: string;
   subtitle?: string;
   showCTA?: boolean;
-  backgroundImage?: string;
 }
 
-const { title, subtitle, showCTA = true, backgroundImage } = Astro.props;
+const { title, subtitle, showCTA = true } = Astro.props;
 ---
 
 <section class="relative bg-gradient-to-br from-primary to-primary-light text-white py-20 md:py-32 overflow-hidden">
-  {backgroundImage && (
-    <div class="absolute inset-0 opacity-20">
-      <img src={backgroundImage} alt="" class="w-full h-full object-cover object-[center_25%]" />
-    </div>
-  )}
   <div class="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary-light/80"></div>
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
     <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
