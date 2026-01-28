@@ -253,18 +253,49 @@ const faqs = [
       <div class="text-center mb-12">
         <h2 class="text-3xl md:text-4xl font-bold mb-4">What Our Customers Say</h2>
       </div>
-      <div class="max-w-3xl mx-auto bg-white/10 backdrop-blur-sm rounded-2xl p-8 md:p-12">
-        <div class="flex justify-center mb-6">
-          {[1,2,3,4,5].map(() => (
-            <svg class="w-8 h-8 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-            </svg>
-          ))}
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Testimonial 1 -->
+        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 md:p-8">
+          <div class="flex mb-4">
+            {[1,2,3,4,5].map(() => (
+              <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+            ))}
+          </div>
+          <blockquote class="text-white/90 italic leading-relaxed mb-4">
+            "Tim from Absolutely Floorless has done an absolutely fantastic job of cleaning my carpets. He is friendly, professional and affordable. Tim is very knowledgeable about what he is doing and answered all of my questions. He managed my expectations when it came to removing long-standing stains, but it came up brilliantly, and looked like a new carpet. I will definitely be recommending him to all of my friends, family and neighbours."
+          </blockquote>
+          <p class="font-semibold">— Hayley V.</p>
         </div>
-        <blockquote class="text-xl md:text-2xl text-center italic leading-relaxed mb-6">
-          "Tim from Absolutely Floorless has done an absolutely fantastic job of cleaning my carpets. He is friendly, professional and affordable. Tim is very knowledgeable about what he is doing and answered all of my questions. He managed my expectations when it came to removing long-standing stains, but it came up brilliantly, and looked like a new carpet. I will definitely be recommending him to all of my friends, family and neighbours."
-        </blockquote>
-        <p class="text-center font-semibold text-lg">— Hayley V.</p>
+        <!-- Testimonial 2 -->
+        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 md:p-8">
+          <div class="flex mb-4">
+            {[1,2,3,4,5].map(() => (
+              <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+            ))}
+          </div>
+          <blockquote class="text-white/90 italic leading-relaxed mb-4">
+            "Highly recommend Tim. He's thorough, polite, friendly and professional. I have had 2 cleans done so far and not disappointed!"
+          </blockquote>
+          <p class="font-semibold">— Benjaminki B.</p>
+        </div>
+        <!-- Testimonial 3 -->
+        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 md:p-8">
+          <div class="flex mb-4">
+            {[1,2,3,4,5].map(() => (
+              <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+            ))}
+          </div>
+          <blockquote class="text-white/90 italic leading-relaxed mb-4">
+            "Did an amazing job. Affordable and friendly."
+          </blockquote>
+          <p class="font-semibold">— Zoe S.</p>
+        </div>
       </div>
     </div>
   </section>
