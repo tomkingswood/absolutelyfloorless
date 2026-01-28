@@ -46,7 +46,7 @@ const { title, subtitle, showCTA = true, isHome = false } = Astro.props;
           </p>
         )}
         {showCTA && (
-          <div class="flex flex-col sm:flex-row gap-4 justify-start">
+          <div class={`flex flex-col sm:flex-row gap-4 ${isHome ? 'justify-start' : 'justify-center'}`}>
             <a
               href="tel:07481597929"
               class="bg-white text-primary px-8 py-4 rounded-xl font-semibold hover:bg-gray-100 hover:scale-105 transition-all duration-300 shadow-lg inline-flex items-center justify-center group"
