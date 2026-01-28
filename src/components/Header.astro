@@ -14,7 +14,7 @@ const currentPath = Astro.url.pathname;
   <p>Tackling tough stains is no problem with our spot stain treatment, starting from just <strong>£10</strong> per stain for a cleaner, fresher home</p>
 </div>
 
-<header class="bg-[#2C2C2C] shadow-sm sticky top-0 z-50">
+<header class="bg-white shadow-sm sticky top-0 z-50">
   <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between items-center h-16 md:h-20">
       <a href="/" class="flex items-center">
@@ -27,7 +27,7 @@ const currentPath = Astro.url.pathname;
           <a
             href={item.href}
             class={`text-sm font-medium transition-colors hover:text-secondary ${
-              currentPath === item.href ? 'text-secondary' : 'text-white'
+              currentPath === item.href ? 'text-secondary' : 'text-gray-700'
             }`}
           >
             {item.label}
@@ -44,7 +44,7 @@ const currentPath = Astro.url.pathname;
       <!-- Mobile Menu Button -->
       <button
         id="mobile-menu-btn"
-        class="md:hidden p-2 rounded-lg hover:bg-white/10 text-white"
+        class="md:hidden p-2 rounded-lg hover:bg-gray-100 text-gray-700"
         aria-label="Toggle menu"
       >
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -60,7 +60,7 @@ const currentPath = Astro.url.pathname;
           <a
             href={item.href}
             class={`px-4 py-2 rounded-lg font-medium transition-colors ${
-              currentPath === item.href ? 'bg-secondary/20 text-secondary' : 'text-white hover:bg-white/10'
+              currentPath === item.href ? 'bg-secondary/10 text-secondary' : 'text-gray-700 hover:bg-gray-100'
             }`}
           >
             {item.label}
