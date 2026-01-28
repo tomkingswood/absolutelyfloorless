@@ -41,7 +41,7 @@ const { title, subtitle, showCTA = true, isHome = false } = Astro.props;
           ) : title}
         </h1>
         {subtitle && (
-          <p class="text-lg md:text-xl text-white/90 max-w-2xl mb-8">
+          <p class={`text-lg md:text-xl text-white/90 max-w-2xl mb-8 ${isHome ? '' : 'mx-auto'}`}>
             {subtitle}
           </p>
         )}
